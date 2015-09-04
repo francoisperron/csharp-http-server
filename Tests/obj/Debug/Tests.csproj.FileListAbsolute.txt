@@ -7,3 +7,5 @@ C:\projects\kata\mvc5-learning\Tests\obj\Debug\Tests.pdb
 C:\projects\kata\mvc5-learning\Tests\bin\Debug\Learning.dll
 C:\projects\kata\mvc5-learning\Tests\bin\Debug\Learning.pdb
 C:\projects\kata\mvc5-learning\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\projects\kata\mvc5-learning\Tests\bin\Debug\RestSharp.dll
+C:\projects\kata\mvc5-learning\Tests\bin\Debug\RestSharp.xml
