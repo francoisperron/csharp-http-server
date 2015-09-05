@@ -45,7 +45,7 @@
     <Compile Include="Helpers\IISServer.cs" />
     <Compile Include="Rest\GetTest.cs" />
     <Compile Include="Rest\PostTest.cs" />
-    <Compile Include="Rest\RestTest.cs" />
+    <Compile Include="Rest\StartServerForRestTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
