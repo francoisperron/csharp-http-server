@@ -10,7 +10,7 @@ namespace Tests
         [Test]
         public void GetReturnsOk()
         {
-            var client = new RestClient("localhost:8080");
+            var client = new RestClient("http://localhost:8008");
             var request = new RestRequest("/", Method.GET);
             var response = client.Execute(request);
 

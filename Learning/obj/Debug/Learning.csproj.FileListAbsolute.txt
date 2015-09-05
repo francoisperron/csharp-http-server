@@ -1,4 +1,0 @@
-C:\projects\kata\mvc5-learning\Learning\bin\Debug\Learning.dll
-C:\projects\kata\mvc5-learning\Learning\bin\Debug\Learning.pdb
-C:\projects\kata\mvc5-learning\Learning\obj\Debug\Learning.dll
-C:\projects\kata\mvc5-learning\Learning\obj\Debug\Learning.pdb

@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GetTest.cs" />
-    <Compile Include="TestFrameworkWorks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -53,12 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Learning\Learning.csproj">
-      <Project>{95A4DD14-4AF1-4AAB-BAA8-76C56E02F277}</Project>
-      <Name>Learning</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
