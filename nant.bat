@@ -1,0 +1,1 @@
+call packages\NAnt.Portable.0.92\NAnt.exe -buildfile:build/project.build %*
