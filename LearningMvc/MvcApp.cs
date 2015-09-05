@@ -13,7 +13,17 @@ namespace LearningMvc
         private void RegisterRoutes()
         {
             AreaRegistration.RegisterAllAreas();
-            RouteTable.Routes.MapRoute("Home", "", new { controller = "Home", action = "Get" });
+            RouteTable.Routes.MapRoute(
+                "GET /", 
+                "", 
+                new { controller = "Home", action = "Get" },
+                new { httpMethod = new HttpMethodConstraint("GET")});
+
+            RouteTable.Routes.MapRoute(
+                "POST /",
+                "",
+                new { controller = "Home", action = "Post" },
+                new { httpMethod = new HttpMethodConstraint("POST") });
         }
     }
 }

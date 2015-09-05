@@ -9,5 +9,10 @@ namespace LearningMvc
         {
             return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
+
+        public ActionResult Post()
+        {
+            return new HttpStatusCodeResult(HttpStatusCode.Created);
+        }
     }
 }
