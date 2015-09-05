@@ -1,6 +1,6 @@
-<project name="mvc5-learning" default="test" basedir="../">
+<project name="csharp-http-server" default="test" basedir="../">
 	<property name="name" value="${project::get-name()}"/>
-	<property name="solution" value="mvc5-learning.sln"/>
+	<property name="solution" value="${name}.sln"/>
 
 	<property name="nuget-bin" value="build/nuget/NuGet.exe"/>
 	<property name="build-bin" value="C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe"/>
