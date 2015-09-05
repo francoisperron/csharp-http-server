@@ -42,8 +42,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PostTest.cs" />
-    <Compile Include="GetTest.cs" />
+    <Compile Include="Rest\GetTest.cs" />
+    <Compile Include="Rest\PostTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

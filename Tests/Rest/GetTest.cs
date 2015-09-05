@@ -2,19 +2,19 @@
 using NUnit.Framework;
 using RestSharp;
 
-namespace Tests
+namespace Tests.Rest
 {
     [TestFixture]
-    class PostTest
+    class GetTest
     {
         [Test]
-        public void PostReturnsCreated()
+        public void GetReturnsOk()
         {
             var client = new RestClient("http://localhost:8008");
-            var request = new RestRequest("/", Method.POST);
+            var request = new RestRequest("/", Method.GET);
             var response = client.Execute(request);
 
-            Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.Created));
+            Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
         }
     }
 }

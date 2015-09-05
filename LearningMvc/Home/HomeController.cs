@@ -1,7 +1,7 @@
 using System.Net;
 using System.Web.Mvc;
 
-namespace LearningMvc
+namespace LearningMvc.Home
 {
     public class HomeController : Controller
     {
