@@ -5,17 +5,20 @@ using System.Text;
 
 namespace Tests.Helpers
 {
-    public class IISExpress
+    public class IISExpress : ServerDriver
     {
         private const string IIS_EXPRESS = @"C:\Program Files\IIS Express\iisexpress.exe";
         private Process process;
 
-        public static IISExpress Start(string config, string site, string apppool)
+        public void Start()
         {
-            return new IISExpress(config, site, apppool);
+            var iisExpressConfig = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) +
+                                  @"\Documents\IISExpress\config\applicationhost.config";
+
+            StartProcess(iisExpressConfig, "LearningMvc", "Clr4IntegratedAppPool");
         }
 
-        private IISExpress(string config, string site, string apppool)
+        private void StartProcess(string config, string site, string apppool)
         {
             var arguments = new StringBuilder();
             arguments.AppendFormat("/{0}:{1} ", "config", config);

@@ -10,6 +10,7 @@
     <target name="deps" description="installs deps">
 		<exec program="${nuget-bin}" commandline="install build/packages.config -OutputDirectory packages" />
 		<exec program="${nuget-bin}" commandline="install LearningMvc/packages.config -OutputDirectory packages" />
+		<exec program="${nuget-bin}" commandline="install LearningWebApi/packages.config -OutputDirectory packages" />
 		<exec program="${nuget-bin}" commandline="install Tests/packages.config -OutputDirectory packages" />
 		<exec program="${nuget-bin}" commandline="update ${solution}" />
     </target>

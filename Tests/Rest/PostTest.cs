@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using NUnit.Framework;
 using RestSharp;
+using Tests.Helpers;
 
 namespace Tests.Rest
 {
@@ -10,7 +11,7 @@ namespace Tests.Rest
         [Test]
         public void PostReturnsCreated()
         {
-            var client = new RestClient("http://localhost:8008");
+            var client = new RestClient(Server.BaseUri);
             var request = new RestRequest("/", Method.POST);
             var response = client.Execute(request);
 
